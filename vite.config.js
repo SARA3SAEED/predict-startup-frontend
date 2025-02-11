@@ -9,6 +9,6 @@ export default defineConfig({
     react(),
   ],
   build: {
-    outDir: 'dist', // Ensure this matches the Netlify publish directory
+    outDir: 'dist', 
   },
 });
