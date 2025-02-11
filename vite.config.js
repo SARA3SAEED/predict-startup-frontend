@@ -3,9 +3,12 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [ 
     tailwindcss(),
-    react()],
-})
+    react(),
+  ],
+  build: {
+    outDir: 'dist', // Ensure this matches the Netlify publish directory
+  },
+});
